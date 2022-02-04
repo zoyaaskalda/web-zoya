@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "partials/head.php" ?>
+<?php include "partials/head.php"?>
 
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
     <?php include "partials/nav.php" ?>
     <?php include "partials/nav.php" ?>
     <div class="content-wrapper">
-      <?php include "partials/content.php" ?>
+      <?php include "routes.php" ?>
     </div>
     <?php include "partials/control.php" ?>
     <?php include "partials/footer.php" ?>
-  </div>div>
+  </div>
 </body>
 
 </html>
