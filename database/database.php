@@ -5,14 +5,14 @@ class Database
     private $db_name;
     private $username;
     private $password;
-    public $conn
+    public $conn;
 
     function __construct()
     {
         $this->host = 'localhost';
         $this->username = 'root';
         $this->password = '';
-        $this->db_name = 'praktikum_presensi_penggajian';
+        $this->db_name = 'penggajian_7s';
     }
 
     public function getConnection()

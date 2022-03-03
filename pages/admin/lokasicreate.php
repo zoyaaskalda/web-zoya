@@ -1,3 +1,18 @@
+<?php
+if (isset($_POST['button_create'])) {
+
+    $database = new Database();
+    $db = $database->getConnection();
+
+    $insertSQL = "INSERT INTO lokasi SET nama_lokasi = '" . $_POST['nama_lokasi'] ."'";
+    $stmt = $db->prepare($insertSql);
+    if ($stmt->execute()) {
+        echo "Simpan Berhasil";
+    } else {
+        echo "Simpan Gagal";
+    }
+}
+?>
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb2">
